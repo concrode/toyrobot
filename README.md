@@ -15,9 +15,13 @@ The application that can read in commands of the following form
     REPORT
 
 1.PLACE will put the toy robot on the table in position X,Y and facing NORTH, SOUTH, EAST or WEST.  The origin (0,0) can be considered to be the SOUTH WEST most corner. It is required that the first command to the robot is a PLACE command, after that, any sequence of commands may be issued, in any order, including another PLACE command.  The application should discard all commands in the sequence until a valid PLACE command has been executed.
+
 2.MOVE will move the toy robot one unit forward in the direction it is currently facing.
+
 3.LEFT and RIGHT will rotate the robot 90 degrees in the specified direction without changing the position of the robot.
+
 4.REPORT will announce the X,Y and F of the robot.  This can be in any form, but standard output is sufficient.
+
 5.A robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.
 Input can be from a file, or from standard input, as the developer chooses.
 Provide test data to exercise the application.
@@ -69,13 +73,13 @@ The toy robot must not fall off the table during movement.  This also includes t
 
 ## Compile, Test, Run and Packaging
 
-- Compile: `mvn compile`
+Compile: `mvn compile`
 
-- Test: `mvn test`
+Test: `mvn test`
 
-- Run: `mvn exec:java`
+Run: `mvn exec:java`
 
-- Packaging: `mvn package`, compiled jar in *target/* folder
+Packaging: `mvn package`, compiled jar in *target/* folder
 
 
 ## Program output Example
