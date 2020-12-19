@@ -101,6 +101,5 @@ Run: `mvn exec:java`
 Packaging: `mvn package`, compiled jar in *target/* folder
 
 
-## Program output Example
 
 
