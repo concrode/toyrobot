@@ -152,7 +152,9 @@ public class RobotTest {
                 "\n*", ">", "*", "*", "*",
                 "\n*", "*", "*", "*", "*",
                 "\n*", "*", "*", "*", "*",
-                "\nThe above map shows robot's location -> (x:1, y:2, direction:EAST). Note:(x:0 y:0) represents the SOUTH WEST most corner.\n"));
+                "\nThe above map shows robot's location -> " +
+                        "(x:1, y:2, direction:EAST). Note:(x:0 y:0) " +
+                        "represents the SOUTH WEST most corner.\n"));
 
         robot.setPosition(new Position(1,2,Direction.EAST));
         Assert.assertEquals(output, robot.reportPosition(board));

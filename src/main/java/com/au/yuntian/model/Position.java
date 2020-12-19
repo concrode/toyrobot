@@ -40,6 +40,11 @@ public class Position {
         this.direction = direction;
     }
 
+    @Override
+    public String toString() {
+        return "x:" + this.x + ",y:" + this.y + ",direction:" + this.direction;
+    }
+
     /**
      * Rule: New position moves only one unit forward against current direction.
      *
